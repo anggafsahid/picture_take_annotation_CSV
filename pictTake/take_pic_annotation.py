@@ -6,16 +6,18 @@ import numpy as np
 img_counter = 0  
 vid         = cv2.VideoCapture(1) 
 
-label       = "LASER_1_OK"
-total_pic   = 50
-interval_pic= 0.15
+label       = "PREFIX_"
+total_pic   = 50      #Total of picture taken
+interval_pic= 0.15    #Interval of Looping
+
 mode        = "train_auto"
 name_prefix = mode+label+"_"
 folder_name = mode+"/"
-start_name  = 1700
+start_name  = 0
 end_name    = start_name+total_pic
 take_flag   = 0
 SEGMENT     = 1
+
 # captured area
 ymin_cap    = 0
 ymax_cap    = 416
